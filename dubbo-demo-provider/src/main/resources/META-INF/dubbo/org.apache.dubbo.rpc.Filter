@@ -1,0 +1,1 @@
+dubboServiceFilter=com.dubbo.example.provider.conf.DubboServiceFilter
