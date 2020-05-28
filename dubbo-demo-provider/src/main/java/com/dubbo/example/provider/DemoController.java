@@ -1,5 +1,6 @@
 package com.dubbo.example.provider;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoController {
 
     @GetMapping(value = "test")
+    @SentinelResource(value = "test")
     public String test(){
         return "test";
     }
